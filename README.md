@@ -2,11 +2,13 @@
 
 [![Deploy to GitHub Pages](https://github.com/ritikthakur22/diwali-phatka/actions/workflows/pages.yml/badge.svg)](https://github.com/ritikthakur22/diwali-phatka/actions/workflows/pages.yml)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?style=flat&logo=github)](https://ritikthakur22.github.io/diwali-phatka/)
+[![Original Reference](https://img.shields.io/badge/Original_Reference-pattasu--diwali.vercel.app-blue)](https://pattasu-diwali.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An interactive, browser-based **Augmented Reality (AR) & 3D Diwali Firecrackers Simulator**. Experience bursting crackers right in your room through your live camera, or enjoy the virtual celebration on an atmospheric Indian rooftop terrace under a starry night sky.
 
-🌐 **Live Demo:** [https://ritikthakur22.github.io/diwali-phatka/](https://ritikthakur22.github.io/diwali-phatka/)
+- 🌐 **Live Demo:** [https://ritikthakur22.github.io/diwali-phatka/](https://ritikthakur22.github.io/diwali-phatka/)
+- 🔗 **Original Project Reference:** [https://pattasu-diwali.vercel.app](https://pattasu-diwali.vercel.app)
 
 ---
 
@@ -72,5 +74,5 @@ Open `http://localhost:8080` in your browser.
 ## 📜 License & Credits
 
 - Created and maintained by [**ritikthakur22**](https://github.com/ritikthakur22).
-- Based on the open-source concept *Pattasu* by [Kevin Adams (@ikevinadams)](https://twitter.com/ikevinadams).
+- **Original Project Reference & Concept**: [Pattasu](https://pattasu-diwali.vercel.app) by [Kevin Adams (@ikevinadams)](https://twitter.com/ikevinadams).
 - Released under the [MIT License](LICENSE).

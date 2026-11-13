@@ -111,7 +111,7 @@ button:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
 
 <div id="stage">
   <div id="scene">
-    
+    <video id="cam" playsinline muted autoplay></video>
     <canvas id="gl"></canvas>
   </div>
   <div id="ui" hidden>
@@ -1155,16 +1155,24 @@ async function startCamera() {
   if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
     throw new Error('Camera not supported');
   }
-  const stream = await navigator.mediaDevices.getUserMedia({
-    video: { facingMode: { ideal: 'environment' }, width: { ideal: 1920 }, height: { ideal: 1080 } },
-    audio: false
-  });
+  let stream;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: { ideal: 'environment' }, width: { ideal: 1920 }, height: { ideal: 1080 } },
+      audio: false
+    });
+  } catch (err) {
+    // Fallback to generic video constraint if environment constraint fails
+    stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+  }
   await attachFeed(stream);
 }
 
 async function attachFeed(stream) {
   if (!video) return;
   video.srcObject = stream;
+  video.muted = true;
+  video.playsInline = true;
   try { await video.play(); } catch (e) { /* plays inline */ }
   const vt = new THREE.VideoTexture(video);
   vt.colorSpace = THREE.NoColorSpace;
