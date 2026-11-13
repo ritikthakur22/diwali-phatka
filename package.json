@@ -1,0 +1,24 @@
+{
+  "name": "diwali-phatka",
+  "version": "1.0.0",
+  "description": "Interactive Diwali Firecrackers Simulator with Live Camera AR & 3D Rooftop Terrace (Three.js & Web Audio API)",
+  "homepage": "https://ritikthakur22.github.io/diwali-phatka/",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritikthakur22/diwali-phatka.git"
+  },
+  "keywords": [
+    "diwali",
+    "firecrackers",
+    "fireworks",
+    "threejs",
+    "webar",
+    "augmented-reality",
+    "web-audio-api"
+  ],
+  "author": "ritikthakur22",
+  "license": "MIT"
+}
